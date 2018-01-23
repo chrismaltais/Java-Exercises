@@ -2,9 +2,9 @@
 
 public class ReverseString {
 	public String reverseString(String s) {
-    if (s == null){
-        return null;
-    }
-    return new StringBuilder(s).reverse().toString();
+    		if (s == null){
+        	return null;
+    		}
+   		return new StringBuilder(s).reverse().toString();
 	}
 }
