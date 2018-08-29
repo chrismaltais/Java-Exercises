@@ -3,6 +3,8 @@
 // Find that single one.
 
 class Solution {
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public int singleNumber(int[] nums) {
         int result = 0;
         for (int number : nums) {

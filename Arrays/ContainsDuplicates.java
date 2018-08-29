@@ -3,6 +3,8 @@
 // and it should return false if every element is distinct.
 
 class Solution {
+    // Time Complexity: O(nlgn)
+    // Space Complexity: O(1)
     public boolean containsDuplicate(int[] nums) {
         if (nums.length < 2) return false;
         Arrays.sort(nums);
@@ -10,6 +12,19 @@ class Solution {
             if (nums[i] == nums[i-1]) {
                 return true;
             }
+        }
+        return false;
+    }
+    
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
+    public boolean containsDuplicate1(int[] nums) {
+        Set<Integer, Integer> set = new HashSet<Integer, Integer>();
+        for (int num : nums) {
+            if (set.containsKey(num)) {
+                return true;
+            }
+            set.put(num, 1);
         }
         return false;
     }
