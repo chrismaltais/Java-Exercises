@@ -7,7 +7,6 @@
 
 public class SoftwareCD {
 	public static String formatter(String S, int K) {
-		if (K == 1) return S.toUpperCase();
 		StringBuilder finalString = new StringBuilder();
 		String[] cutS = S.split("-");
 		String noHyphenString = String.join("", cutS);
